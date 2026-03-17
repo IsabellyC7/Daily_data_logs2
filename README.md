@@ -1,30 +1,51 @@
-<<<<<<< HEAD
-Hoje finalizei a instalação do Python e do PySpark, além de configurar o ambiente no VS Code e criar um ambiente virtual (venv). Depois disso fiz alguns testes para garantir que estava certo. 
+Hoje pela manhã participei da daily da Pernambucanas. Em seguida, subi meus arquivos de estudo no GitHub, já que ontem eu ainda estava com dúvida sobre qual repositório utilizar e acabei aguardando a reunião, e acabou não dando tempo. Aproveitei para subir o conteúdo de ontem, criar a feature referente ao dia de hoje e já deixei tudo preparado para ir atualizando ao longo do dia.
 
-Durante o estudo foquei em entender os conceitos iniciais da linguagem e me familiarizar com a sintaxe. Bom hoje os pontos que eu estudei foram o SparkSession, DataFrames, criação de DataFrames e algumas operações simples como filtros utilizando filter() e visualização de resultados com show(). Também fiz comparações entre PySpark e SQL, que é uma linguagem que eu já tenho mais familiaridade, o que ajudou bastante a entender a lógica das operações.
+Depois disso, foquei nos estudos de PySpark, executando alguns códigos para treinar e reforçar o aprendizado na prática, que é a forma que eu mais aprendo. Como o curso está mais teórico, fiz algumas comparações com SQL, o que me ajudou bastante a entender melhor os conceitos, e já estou conseguindo aplicar comandos básicos.
 
-Na prática para treinar executei um exemplo simples criando um DataFrame e aplicando um filtro nos dados:
+Também estudei alguns conceitos importantes de PySpark e utilizei o Google Colab (conforme orientação do Brizola) para executar os códigos por partes, facilitando o entendimento de cada etapa.
 
-```python id="4m55gb"
-from pyspark.sql import SparkSession
+No geral, fiquei bem satisfeita com o progresso de hoje, pois sinto que estou conseguindo compreender bem o conteúdo e evoluir de forma consistente.
 
-spark = SparkSession.builder.appName("Desafio1").getOrCreate()
+Alguns códigos que fiz pra treinar:
 
-dados = [
-("Ana",17,8),
-("Carlos",19,6),
-("Marina",18,9),
-("João",20,5)
-]
+```python
+# teste basico, para gravar os comandos e entender melhor cada um
 
-df = spark.createDataFrame(dados, ["nome","idade","nota"])
+print("iniciando spark...") # teste
 
-df.filter(df.nota > 7).show()
+from pyspark.sql import SparkSession  # importando a classe do Spark
+
+# começa a configurar o Spark
+spark = SparkSession.builder \
+    .appName("Teste") \  # define o nome da aplicação
+    .getOrCreate()       # cria a sessão se não existir ou reutiliza se já tiver
+
+print("spark iniciado")
+
+dados = [("Isa", 17), ("João", 25)]  # criando dados: cada tupla é uma linha do DataFrame
+
+df = spark.createDataFrame(dados, ["nome", "idade"])  # criando DataFrame
+
+df.show()  # exibe o DataFrame no terminal (equivalente ao SELECT * FROM)
+
+print("finalizando...")
 
 spark.stop()
-```
 
-Hoje preferi estudar mais por conta própria e focar na prática, testando exemplos e explorando a linguagem, então não fiz o curso em si. Comparar com SQL também ajudou bastante a entender o estilo do PySpark. Amanhã provavelmente volto ao curso, mas pretendo seguir praticando e explorando exemplos para ir fixando melhor.
-=======
-# Daily_data_logs
->>>>>>> ff888ed4e1554f9b2829831ed118684fe6ba0efd
+# teste com filter e adicionar coluna
+
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col  # permite acessar uma coluna do DataFrame
+
+spark = SparkSession.builder.appName("Ex1").getOrCreate()
+
+dados = [("Isa", 17), ("Faria", 22), ("JoãoC", 15), ("Enzo", 18), ("Juliane", 20)]
+df = spark.createDataFrame(dados, ["nome", "idade"])
+
+df.filter(df.idade >= 18)  # só filtra, não altera df até show
+
+df = df.withColumn("ano_nascimento", 2026 - col("idade"))  # cria nova coluna
+
+df.show()
+
+spark.stop()
