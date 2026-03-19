@@ -105,6 +105,14 @@ df_kpi.show()
 df_kpi.write.mode("overwrite").parquet("output/relatorio_vendas")
 ```
 
+## 19/03/2026
+
+Hoje pela manhã participei da daily da Pernambucanas. Em seguida, entrei em uma reunião onde foi apresentada a nova demanda, junto com as instruções de como deveria ser realizada.
+
+Após isso, iniciei a atividade que consiste em trabalhar com queries SQL no BigQuery, executando os códigos fornecidos, analisando os erros retornados e realizando os ajustes necessários para que as consultas funcionem corretamente. Durante esse processo, também comecei a me familiarizar com o ambiente do BigQuery e a entender melhor como os erros se comportam e como corrigi-los na prática.
+
+ 
+
 
 
 
