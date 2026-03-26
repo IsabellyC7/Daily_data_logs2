@@ -118,7 +118,8 @@ Transformar a view que ja existe, em um processo dataform que vai salvar numa ta
 
 Depois disso, tivemos que fazer alguns ajustes ali de permissões, no começo eu tive um pouco de dificuldade pra entender, porque nunca tinha mexido com Dataform, então ainda tava me situando. Aí entrei em call com o Brizola, e ele começou a me ajudar ali do zero, já iniciando uma parte da demanda comigo, então tá me dando uma baita força.
 
-E se der tudo certo, hoje a gente deve continuar nisso pra eu conseguir seguir com a demanda
+E se der tudo certo, hoje a gente deve continuar nisso pra eu conseguir seguir com a demanda 
+
 
  
 
