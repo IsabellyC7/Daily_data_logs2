@@ -133,6 +133,13 @@ Queria deixar um agradecimento especial /valeu para a Elaine, porque com a ajuda
 
 
 
+## 27/03/2026
+
+Hoje, finalizei a construção da tabela v_cota_produto_financeiro em call com o Brizola e a Elaine. Realizamos os testes e os dados estão retornando exatamente como o esperado.
+
+Tínhamos uma dúvida sobre o conflito de nomes, já que a tabela estava substituindo a view, mas a Elaine validou com a Mai e a Bia e seguiremos com esse padrão mesmo, sem impedimentos.
+
+Com isso, já dei início à próxima demanda, que é a view dominio_status. Estou estudando a melhor lógica para o particionamento dela; agora que compreendo melhor o processo, quero tentar estruturar essa parte sozinha antes de pedir uma revisão.
 
  
 
