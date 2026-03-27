@@ -126,6 +126,14 @@ Hoje, segui na demanda de migrar a View para o Dataform. Comecei em call com o B
 
 Tive um pouco de dificuldade no entendimento do SELECT final (como conectar as referências do WITH com a saída da tabela), então hoje meu foco é destravar essa parte, finalizar o script e rodar os testes em homologação."
 
+## 26/03/2026
+Hoje, passei boa parte do dia em call com a Elaine e o Brizola. Eles me deram um apoio gigante com as dúvidas que eu estava tendo e conseguimos dar uma boa continuidade na demanda.
+
+Queria deixar um agradecimento especial /valeu para a Elaine, porque com a ajuda dela eu finalmente consegui entender a lógica do que eu estava fazendo, e não só executar e pro Brizola também. No finalzinho da tarde, tivemos um probleminha técnico — provavelmente um conflito pelo fato de a tabela ter o mesmo nome da view — então hoje meu foco é resolver esse detalhe e finalizar o processo."
+
+
+
+
  
 
 
