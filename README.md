@@ -143,11 +143,23 @@ Com isso, já dei início à próxima demanda, que é a view dominio_status. Est
 
 ## 30/03/2026
 
-Ontem participei do treinamento geral e, na sequência, realizei os KTs com o Brizola e o Lucas sobre o processo_log e a estrutura do Dataform, o que me ajudou a alinhar melhor esses processos.
+Ontem eu  na sequência, realizei os KTs com o Brizola e o Lucas sobre o processo_log e a estrutura do Dataform, o que me ajudou a alinhar melhor esses processos.
 
 Depois disso, dei continuidade no desenvolvimento da tabela viw_dominio_status. Para isso, utilizei a lógica de particionamento por num_anomes_prod, seguindo o mesmo padrão da v_cota_produt_financeiro.
 
 Além do particionamento mensal, implementei também o CLUSTER BY st_id_status, por ser o principal campo de identificação da tabela. A ideia é otimizar a performance das consultas, já que os dados ficam organizados por esse ID dentro de cada partição mensal, tornando os filtros por status mais rápidos e eficientes.
+
+## 31/03/2026
+
+Hoje, tive uma reunião sobre o novo projeto que fui adicionada, que é sobre a criação de um GED para a digio.
+logo após a reunião eu dei continuidade a minha demanda e acredito que acabei o script, porem executei e esta dando um erro no get_processo_log que não entendi, então estou esperando a disponibilidade dos meninos pra me ajudarem com esse erro.
+Depois disso eu dei uma estudada sobre o que a Bia havia sugerido e segue um pouco doque vi sobre a ideia de "Agentes Inteligentes para Automação de Consultas e Facilitação do Acesso aos Dados":
+
+Eu dei a ideia pra bia "de Agentes Inteligentes para Automação de Consultas e Facilitação do Acesso aos Dados"
+e ela me retornou sobre o MCP do bigquerry que é um a gente que lista, analisa as descriçoes, e retorna oque foi pedido.
+Eu achei muito interessante pq voce não precisa saber sql e nem nada do tipo para utilizar, pois ele utiliza linguagem natural, porem, pra conseguir implementar e tudo mais voce precisa de um desenvolvedor, claro, porque enfim tem que implementar o servidor e enfim.
+e ele não é muito bem um chat, entao ele não vai explicar nada e enfim nada do tipo, ele não tem um front como se fosse um chat q é oq eu havia pensado pra ideia de agente que eu sugeri pra bia
+entao meu objetivo é aprimorar a ideia pra que eu consiga usar o mcp como uma ponte pra um possivel projeto maior.
 
  
 
